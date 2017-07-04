@@ -35,6 +35,14 @@
                                     <constraint firstAttribute="width" secondItem="dx4-DM-vmD" secondAttribute="height" multiplier="375:86" id="Iek-Ys-BRH"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-E3-HG9">
+                                <rect key="frame" x="81" y="681" width="253" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="20"/>
+                                <state key="normal" title="www.marioGENEAU.com">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-pf-dyr">
                                 <rect key="frame" x="123" y="13" width="168" height="74"/>
                                 <constraints>
@@ -42,33 +50,25 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Py9-oX-jwi">
-                                <rect key="frame" x="61" y="329" width="253" height="57"/>
+                                <rect key="frame" x="81" y="327" width="253" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="new.png"/>
+                                <state key="normal" image="play.png"/>
                                 <connections>
                                     <segue destination="PT6-CT-cAx" kind="presentation" id="wAa-bf-iVo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wc-Yp-TnO">
-                                <rect key="frame" x="61" y="394" width="253" height="57"/>
+                                <rect key="frame" x="81" y="392" width="253" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reset.png"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIGH SCORE : 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wk-wd-OUK">
-                                <rect key="frame" x="61" y="287" width="253" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIGHSCORE : 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wk-wd-OUK">
+                                <rect key="frame" x="81" y="287" width="253" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-E3-HG9">
-                                <rect key="frame" x="61" y="681" width="253" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="20"/>
-                                <state key="normal" title="www.marioGENEAU.com">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -114,59 +114,84 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uYv-2P-Sqm">
-                                <rect key="frame" x="41" y="166" width="332" height="331"/>
+                                <rect key="frame" x="41" y="165" width="332" height="332"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-Ft-ZYc">
-                                        <rect key="frame" x="0.0" y="0.0" width="332" height="103"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="104"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWQ-vI-gUD">
-                                                <rect key="frame" x="0.0" y="0.0" width="104" height="103"/>
-                                                <state key="normal" image="b8.png"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Um-WD-4wF">
-                                                <rect key="frame" x="114" y="0.0" width="104" height="103"/>
-                                                <state key="normal" image="b2.png"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UB-K6-zdF">
-                                                <rect key="frame" x="228" y="0.0" width="104" height="103"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b8.png"/>
                                                 <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="AYQ-I1-ToX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Um-WD-4wF">
+                                                <rect key="frame" x="114" y="0.0" width="104" height="104"/>
+                                                <state key="normal" image="b2.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="aVM-kJ-UVt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1UB-K6-zdF">
+                                                <rect key="frame" x="228" y="0.0" width="104" height="104"/>
+                                                <state key="normal" image="b8.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="rOv-bS-abv"/>
                                                     <segue destination="Odg-0S-Xmk" kind="presentation" id="xN3-yu-okE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qpk-5X-HP6">
-                                        <rect key="frame" x="0.0" y="113" width="332" height="104"/>
+                                        <rect key="frame" x="0.0" y="114" width="332" height="104"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-ba-0B9">
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCw-ba-0B9">
                                                 <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b2.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="b0h-3m-qji"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tO-oh-JPg">
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tO-oh-JPg">
                                                 <rect key="frame" x="114" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b2.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="hX7-Ga-1p2"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-Zp-Fsj">
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-Zp-Fsj">
                                                 <rect key="frame" x="228" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b2.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="wy9-8s-djS"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pT2-wY-pvz">
-                                        <rect key="frame" x="0.0" y="227" width="332" height="104"/>
+                                        <rect key="frame" x="0.0" y="228" width="332" height="104"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Rb-1V5">
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cST-Rb-1V5">
                                                 <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b8.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="Hpd-q8-vYj"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-rz-VSw">
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJT-rz-VSw">
                                                 <rect key="frame" x="114" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b2.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="muU-va-nV9"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wr-Tm-zwW">
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wr-Tm-zwW">
                                                 <rect key="frame" x="228" y="0.0" width="104" height="104"/>
                                                 <state key="normal" image="b8.png"/>
+                                                <connections>
+                                                    <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="8L5-v1-JzA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -175,12 +200,19 @@
                                     <constraint firstAttribute="width" secondItem="uYv-2P-Sqm" secondAttribute="height" multiplier="1:1" id="CZP-3a-yS8"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR TURN : 29 s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-TD-tNO">
+                                <rect key="frame" x="39" y="681" width="337" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ring.png" translatesAutoresizingMaskIntoConstraints="NO" id="bTS-vN-MPv">
-                                <rect key="frame" x="151" y="527" width="113" height="113"/>
+                                <rect key="frame" x="151" y="539" width="113" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="248" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-I0-Cld">
-                                <rect key="frame" x="161" y="564" width="93" height="39"/>
+                                <rect key="frame" x="161" y="576" width="93" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="34"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -253,7 +285,7 @@
                                 <state key="normal" image="new.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE : 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MO-CM-PPC">
-                                <rect key="frame" x="36" y="283" width="343" height="36"/>
+                                <rect key="frame" x="81" y="285" width="253" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -273,7 +305,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YPN-R0-hpl" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="36"/>
+            <point key="canvasLocation" x="1476.8115942028987" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>
@@ -282,6 +314,7 @@
         <image name="bar.png" width="2054" height="471"/>
         <image name="high.png" width="804" height="181"/>
         <image name="new.png" width="804" height="182"/>
+        <image name="play.png" width="805" height="182"/>
         <image name="reset.png" width="805" height="182"/>
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
