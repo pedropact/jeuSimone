@@ -82,7 +82,6 @@
                     </view>
                     <connections>
                         <outlet property="highscoreLabel" destination="1wk-wd-OUK" id="ogC-4m-tbe"/>
-                        <segue destination="PT6-CT-cAx" kind="presentation" id="lP9-eX-V0L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -138,7 +137,6 @@
                                                 <state key="normal" image="b8.png"/>
                                                 <connections>
                                                     <action selector="buttonManager:" destination="PT6-CT-cAx" eventType="touchUpInside" id="rOv-bS-abv"/>
-                                                    <segue destination="Odg-0S-Xmk" kind="presentation" id="xN3-yu-okE"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -319,8 +317,4 @@
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="lP9-eX-V0L"/>
-        <segue reference="xN3-yu-okE"/>
-    </inferredMetricsTieBreakers>
 </document>
