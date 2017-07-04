@@ -8,20 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		B37A45841F0B1C670048C991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45831F0B1C670048C991 /* AppDelegate.swift */; };
-		B37A45861F0B1C670048C991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45851F0B1C670048C991 /* ViewController.swift */; };
+		B37A45861F0B1C670048C991 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45851F0B1C670048C991 /* StartController.swift */; };
 		B37A45891F0B1C670048C991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37A45871F0B1C670048C991 /* Main.storyboard */; };
 		B37A458B1F0B1C670048C991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37A458A1F0B1C670048C991 /* Assets.xcassets */; };
 		B37A458E1F0B1C670048C991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37A458C1F0B1C670048C991 /* LaunchScreen.storyboard */; };
+		B37A459A1F0B1D560048C991 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45961F0B1D560048C991 /* GameController.swift */; };
+		B37A459B1F0B1D560048C991 /* WrongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45971F0B1D560048C991 /* WrongController.swift */; };
+		B37A459C1F0B1D560048C991 /* SimoneBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45981F0B1D560048C991 /* SimoneBrain.swift */; };
+		B37A459D1F0B1D560048C991 /* SingletonShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A45991F0B1D560048C991 /* SingletonShared.swift */; };
+		B37A45A11F0B1EA70048C991 /* Beatles Light Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A01F0B1EA70048C991 /* Beatles Light Light.ttf */; };
+		B37A45AD1F0B1EB50048C991 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A21F0B1EB50048C991 /* 120.png */; };
+		B37A45AE1F0B1EB50048C991 /* b2.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A31F0B1EB50048C991 /* b2.png */; };
+		B37A45AF1F0B1EB50048C991 /* b8.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A41F0B1EB50048C991 /* b8.png */; };
+		B37A45B01F0B1EB50048C991 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A51F0B1EB50048C991 /* bar.png */; };
+		B37A45B11F0B1EB50048C991 /* high.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A61F0B1EB50048C991 /* high.png */; };
+		B37A45B21F0B1EB50048C991 /* icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A71F0B1EB50048C991 /* icon_120.png */; };
+		B37A45B31F0B1EB50048C991 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A81F0B1EB50048C991 /* new.png */; };
+		B37A45B41F0B1EB50048C991 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45A91F0B1EB50048C991 /* play.png */; };
+		B37A45B51F0B1EB50048C991 /* reset.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45AA1F0B1EB50048C991 /* reset.png */; };
+		B37A45B61F0B1EB50048C991 /* ring.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45AB1F0B1EB50048C991 /* ring.png */; };
+		B37A45B71F0B1EB50048C991 /* simone.png in Resources */ = {isa = PBXBuildFile; fileRef = B37A45AC1F0B1EB50048C991 /* simone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B37A45801F0B1C670048C991 /* jeuSimone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jeuSimone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37A45831F0B1C670048C991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B37A45851F0B1C670048C991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B37A45851F0B1C670048C991 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
 		B37A45881F0B1C670048C991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B37A458A1F0B1C670048C991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B37A458D1F0B1C670048C991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B37A458F1F0B1C670048C991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37A45961F0B1D560048C991 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		B37A45971F0B1D560048C991 /* WrongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrongController.swift; sourceTree = "<group>"; };
+		B37A45981F0B1D560048C991 /* SimoneBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimoneBrain.swift; sourceTree = "<group>"; };
+		B37A45991F0B1D560048C991 /* SingletonShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonShared.swift; sourceTree = "<group>"; };
+		B37A45A01F0B1EA70048C991 /* Beatles Light Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Beatles Light Light.ttf"; path = "fonts/Beatles Light Light.ttf"; sourceTree = "<group>"; };
+		B37A45A21F0B1EB50048C991 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = images/120.png; sourceTree = "<group>"; };
+		B37A45A31F0B1EB50048C991 /* b2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b2.png; path = images/b2.png; sourceTree = "<group>"; };
+		B37A45A41F0B1EB50048C991 /* b8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = b8.png; path = images/b8.png; sourceTree = "<group>"; };
+		B37A45A51F0B1EB50048C991 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = images/bar.png; sourceTree = "<group>"; };
+		B37A45A61F0B1EB50048C991 /* high.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = high.png; path = images/high.png; sourceTree = "<group>"; };
+		B37A45A71F0B1EB50048C991 /* icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_120.png; path = images/icon_120.png; sourceTree = "<group>"; };
+		B37A45A81F0B1EB50048C991 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new.png; path = images/new.png; sourceTree = "<group>"; };
+		B37A45A91F0B1EB50048C991 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = images/play.png; sourceTree = "<group>"; };
+		B37A45AA1F0B1EB50048C991 /* reset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset.png; path = images/reset.png; sourceTree = "<group>"; };
+		B37A45AB1F0B1EB50048C991 /* ring.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ring.png; path = images/ring.png; sourceTree = "<group>"; };
+		B37A45AC1F0B1EB50048C991 /* simone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = simone.png; path = images/simone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +86,54 @@
 		B37A45821F0B1C670048C991 /* jeuSimone */ = {
 			isa = PBXGroup;
 			children = (
-				B37A45831F0B1C670048C991 /* AppDelegate.swift */,
-				B37A45851F0B1C670048C991 /* ViewController.swift */,
+				B37A45951F0B1C7A0048C991 /* New Group */,
+				B37A45851F0B1C670048C991 /* StartController.swift */,
+				B37A45961F0B1D560048C991 /* GameController.swift */,
+				B37A45971F0B1D560048C991 /* WrongController.swift */,
+				B37A45981F0B1D560048C991 /* SimoneBrain.swift */,
+				B37A45991F0B1D560048C991 /* SingletonShared.swift */,
 				B37A45871F0B1C670048C991 /* Main.storyboard */,
+			);
+			path = jeuSimone;
+			sourceTree = "<group>";
+		};
+		B37A45951F0B1C7A0048C991 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B37A459F1F0B1E600048C991 /* images */,
+				B37A459E1F0B1E530048C991 /* fonts */,
+				B37A45831F0B1C670048C991 /* AppDelegate.swift */,
 				B37A458A1F0B1C670048C991 /* Assets.xcassets */,
 				B37A458C1F0B1C670048C991 /* LaunchScreen.storyboard */,
 				B37A458F1F0B1C670048C991 /* Info.plist */,
 			);
-			path = jeuSimone;
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		B37A459E1F0B1E530048C991 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B37A45A01F0B1EA70048C991 /* Beatles Light Light.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		B37A459F1F0B1E600048C991 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B37A45A21F0B1EB50048C991 /* 120.png */,
+				B37A45A31F0B1EB50048C991 /* b2.png */,
+				B37A45A41F0B1EB50048C991 /* b8.png */,
+				B37A45A51F0B1EB50048C991 /* bar.png */,
+				B37A45A61F0B1EB50048C991 /* high.png */,
+				B37A45A71F0B1EB50048C991 /* icon_120.png */,
+				B37A45A81F0B1EB50048C991 /* new.png */,
+				B37A45A91F0B1EB50048C991 /* play.png */,
+				B37A45AA1F0B1EB50048C991 /* reset.png */,
+				B37A45AB1F0B1EB50048C991 /* ring.png */,
+				B37A45AC1F0B1EB50048C991 /* simone.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +196,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B37A458E1F0B1C670048C991 /* LaunchScreen.storyboard in Resources */,
+				B37A45AE1F0B1EB50048C991 /* b2.png in Resources */,
+				B37A45B51F0B1EB50048C991 /* reset.png in Resources */,
+				B37A45B11F0B1EB50048C991 /* high.png in Resources */,
 				B37A458B1F0B1C670048C991 /* Assets.xcassets in Resources */,
+				B37A45AD1F0B1EB50048C991 /* 120.png in Resources */,
+				B37A45B41F0B1EB50048C991 /* play.png in Resources */,
 				B37A45891F0B1C670048C991 /* Main.storyboard in Resources */,
+				B37A45B71F0B1EB50048C991 /* simone.png in Resources */,
+				B37A45B31F0B1EB50048C991 /* new.png in Resources */,
+				B37A45B21F0B1EB50048C991 /* icon_120.png in Resources */,
+				B37A45AF1F0B1EB50048C991 /* b8.png in Resources */,
+				B37A45A11F0B1EA70048C991 /* Beatles Light Light.ttf in Resources */,
+				B37A45B01F0B1EB50048C991 /* bar.png in Resources */,
+				B37A45B61F0B1EB50048C991 /* ring.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37A45861F0B1C670048C991 /* ViewController.swift in Sources */,
+				B37A459D1F0B1D560048C991 /* SingletonShared.swift in Sources */,
+				B37A459C1F0B1D560048C991 /* SimoneBrain.swift in Sources */,
+				B37A45861F0B1C670048C991 /* StartController.swift in Sources */,
+				B37A459B1F0B1D560048C991 /* WrongController.swift in Sources */,
+				B37A459A1F0B1D560048C991 /* GameController.swift in Sources */,
 				B37A45841F0B1C670048C991 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
