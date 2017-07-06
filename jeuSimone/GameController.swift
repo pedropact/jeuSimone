@@ -21,17 +21,19 @@ class GameController: UIViewController {
     @IBOutlet weak var but9: UIButton!
     @IBOutlet weak var scoreKeeper: UILabel!
     var arrOfGameColors: [UIButton]!
-    var simoneBrain = SimoneBrain!
+    var simoneBrain: SimoneBrain!
 
     //------------------
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
         arrOfGameColors = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
-        
         simoneBrain = SimoneBrain(gameColors: arrOfGameColors)
+        simoneBrain.addRandomColorToArray()
+        simoneBrain.startGame()
+        scoreKeeper.text = simoneBrain.scoreKeeper
+        simoneBrain.loadArrayForComparison()
     }
 
     
@@ -42,7 +44,70 @@ class GameController: UIViewController {
     //------------------
     
     @IBAction func buttonManager(_ sender: UIButton) {
+        if !simoneBrain.userTurnToPlay {
+            return
+        }
+        if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
+            simoneBrain.arrCopyOfRandomColorsToCompare = simoneBrain.arrRandomColors
+        }
+        if !simoneBrain.verification(arrOfGameColors[sender.tag]) {
+            performSegue(withIdentifier: "wrong", sender: nil)
+        }
+        simoneBrain.scoreKeeperCounter! += 1
+        scoreKeeper.text = "\(simoneBrain.scoreKeeperCounter!)"
+        
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

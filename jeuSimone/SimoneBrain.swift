@@ -40,27 +40,27 @@ class SimoneBrain {
     
     //------------------
     
-    func starGame(_ arrOfRandomButtons: [UIButton]) {
-        colorTracker = 0
+    func startGame() {
+        colorIndex = 0
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in
-            self.buttonAlphaManager(arrOfRandomButtons)
+            self.gameColorsToHighlineManager()
         }
     }
     
     //------------------
     
-    func buttonAlphaManager (_ arrOfRandomButtons: [UIButton]) {
+    func gameColorsToHighlineManager() {
         
-        if colorTracker < arrOfRandomButtons.count {
+        if colorIndex < arrRandomColors.count {
             userTurnToPlay = false
-            scoreKeeperCounter = 0
             scoreKeeper = ""
-            randomButtonChooser = arrOfRandomButtons[colorTracker]
-            randomButtonChooser.alpha = 0.2
-            colorTracker! += 1
+            colorToHighlight = arrRandomColors[colorIndex]
+            colorToHighlight.alpha = 0.2
+            colorIndex! += 1
+            scoreKeeperCounter = 0
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
-                self.resetAlphaForButtons(arrOfRandomButtons)
+                self.resetAlphaForColors()
             }
         } else {
             userTurnToPlay = true
@@ -69,11 +69,10 @@ class SimoneBrain {
     
     //------------------
     
-    func resetAlphaForButtons (_ arrOfRandomButtons: [UIButton]) {
-        randomButtonChooser.alpha = 1.0
-        
+    func resetAlphaForColors () {
+        colorToHighlight.alpha = 1.0
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
-            self.buttonAlphaManager(arrOfRandomButtons)
+            self.gameColorsToHighlineManager()
         }
     }
 
@@ -82,15 +81,59 @@ class SimoneBrain {
     var scoreKeeper: String? {
         
         get {
-            return theScoreKeeper
+            return scoreTracker
         }
         set {
-            theScoreKeeper = newValue!
+            scoreTracker = newValue!
         }
+    }
+    
+    //------------------
+
+    func verification(_ aButton: UIButton) -> Bool {
         
+        if arrCopyOfRandomColorsToCompare[0] == aButton {
+            arrCopyOfRandomColorsToCompare.removeFirst()
+            if arrCopyOfRandomColorsToCompare.count == 0 {
+                colorIndex = 0
+                addRandomColorToArray()
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false){_ in
+                    self.gameColorsToHighlineManager()
+                }
+            }
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    //------------------
+
+    func addRandomColorToArray() {
+        let randomIndex = getRandomNumber(from: 0, to: gameColors.count - 1)
+        arrRandomColors.append(gameColors[randomIndex])
+    }
+    
+    //------------------
+
+    func loadArrayForComparison () {
+        arrCopyOfRandomColorsToCompare = arrRandomColors
     }
     
     
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
