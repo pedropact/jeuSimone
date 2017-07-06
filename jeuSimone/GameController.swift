@@ -20,37 +20,27 @@ class GameController: UIViewController {
     @IBOutlet weak var but8: UIButton!
     @IBOutlet weak var but9: UIButton!
     @IBOutlet weak var scoreKeeper: UILabel!
+    var arrOfGameColors: [UIButton]!
+    var simoneBrain = SimoneBrain!
 
-    var arrOfButtons: [UIButton]!
-    var arrOfRandomButtons: [UIButton] = []
-
-    let simoneBrain = SimoneBrain()
-
+    //------------------
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
 
-        arrOfButtons = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
-
-        addRandomButtonToArray()
+        arrOfGameColors = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
         
-        simoneBrain.starGame(arrOfRandomButtons)
-        
-        scoreKeeper.text = simoneBrain.scoreKeeper
-
+        simoneBrain = SimoneBrain(gameColors: arrOfGameColors)
     }
 
-    func addRandomButtonToArray(){
-       let randomIndex = simoneBrain.getRandomNumber(from: 0, to: arrOfButtons.count - 1)
-        arrOfRandomButtons.append(arrOfButtons[randomIndex])
-        
-    }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    //------------------
+    
     @IBAction func buttonManager(_ sender: UIButton) {
     }
 
