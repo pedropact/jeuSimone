@@ -232,12 +232,12 @@
                         <outlet property="but8" destination="uJT-rz-VSw" id="BlA-66-gNe"/>
                         <outlet property="but9" destination="2Wr-Tm-zwW" id="c33-GZ-Zeq"/>
                         <outlet property="scoreKeeper" destination="4sL-I0-Cld" id="nBa-Uz-9gf"/>
-                        <segue destination="4Z3-wd-by3" kind="presentation" id="9tp-Vg-koF"/>
+                        <segue destination="4Z3-wd-by3" kind="presentation" id="dZp-x4-oHg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCg-Yb-XNU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750.72463768115949" y="35.869565217391305"/>
+            <point key="canvasLocation" x="752" y="36"/>
         </scene>
         <!--Wrong Controller-->
         <scene sceneID="0sr-aA-V2O">
@@ -269,10 +269,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifd-lA-sJT">
                                         <rect key="frame" x="0.0" y="0.0" width="290" height="63.333333333333371"/>
                                         <state key="normal" image="new.png"/>
+                                        <connections>
+                                            <segue destination="PT6-CT-cAx" kind="presentation" id="0BV-uo-vP1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGU-aa-jd7">
                                         <rect key="frame" x="0.0" y="78.333333333333371" width="290" height="63"/>
                                         <state key="normal" image="high.png"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" id="tMB-bz-p5t"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -313,11 +319,12 @@
                     </view>
                     <connections>
                         <outlet property="highscoreLabel" destination="jeV-8o-EHU" id="qpR-zr-Ryn"/>
+                        <outlet property="scoreLabel" destination="jeV-8o-EHU" id="FE3-ea-9wi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbo-lT-dhs" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="36"/>
+            <point key="canvasLocation" x="1488" y="36"/>
         </scene>
     </scenes>
     <resources>
@@ -331,4 +338,7 @@
         <image name="ring.png" width="267" height="267"/>
         <image name="simone.png" width="512" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wAa-bf-iVo"/>
+    </inferredMetricsTieBreakers>
 </document>
