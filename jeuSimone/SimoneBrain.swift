@@ -42,8 +42,7 @@ class SimoneBrain {
     
     func startGame() {
         colorIndex = 0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in
-            self.gameColorsToHighlineManager()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in self.gameColorsToHighlineManager()
         }
     }
     
@@ -59,8 +58,7 @@ class SimoneBrain {
             colorIndex! += 1
             scoreKeeperCounter = 0
             
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
-                self.resetAlphaForColors()
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.resetAlphaForColors()
             }
         } else {
             userTurnToPlay = true
@@ -71,8 +69,7 @@ class SimoneBrain {
     
     func resetAlphaForColors () {
         colorToHighlight.alpha = 1.0
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in
-            self.gameColorsToHighlineManager()
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.gameColorsToHighlineManager()
         }
     }
 
@@ -97,8 +94,7 @@ class SimoneBrain {
             if arrCopyOfRandomColorsToCompare.count == 0 {
                 colorIndex = 0
                 addRandomColorToArray()
-                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false){_ in
-                    self.gameColorsToHighlineManager()
+                Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false){_ in self.gameColorsToHighlineManager()
                 }
             }
             return true
