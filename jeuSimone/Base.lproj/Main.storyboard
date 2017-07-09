@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,12 +42,6 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-pf-dyr">
-                                <rect key="frame" x="123" y="13" width="168" height="73.666666666666671"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="X3h-pf-dyr" secondAttribute="height" multiplier="137:60" id="75b-qH-qc3"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="KBK-jf-6on">
                                 <rect key="frame" x="62" y="297.33333333333331" width="290" height="141.33333333333337"/>
                                 <subviews>
@@ -68,35 +61,25 @@
                                     <constraint firstAttribute="width" secondItem="KBK-jf-6on" secondAttribute="height" multiplier="403:197" id="Qp7-Zy-RMs"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CKZ-5R-4nA">
-                                <rect key="frame" x="20.666666666666657" y="235.66666666666669" width="372.66666666666663" height="53.666666666666686"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HIGHSCORE : 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wk-wd-OUK">
-                                        <rect key="frame" x="0.0" y="0.0" width="372.66666666666663" height="53.666666666666657"/>
-                                        <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="25"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="CKZ-5R-4nA" secondAttribute="height" multiplier="195:28" id="CDD-5g-RhV"/>
-                                    <constraint firstAttribute="width" secondItem="CKZ-5R-4nA" secondAttribute="height" multiplier="195:28" id="cRO-u5-agF"/>
-                                </constraints>
-                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-pf-dyr">
+                                <rect key="frame" x="120" y="9" width="174" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HIGHSCORE : 23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wk-wd-OUK">
+                                <rect key="frame" x="76" y="233" width="262.66666666666663" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="KBK-jf-6on" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6GH-HE-L1y"/>
                             <constraint firstItem="KBK-jf-6on" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="EHt-UP-vFe"/>
-                            <constraint firstItem="KBK-jf-6on" firstAttribute="top" secondItem="CKZ-5R-4nA" secondAttribute="bottom" constant="8" id="Jdn-Il-ggD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="X3h-pf-dyr" secondAttribute="trailing" constant="103" id="U8o-fN-YdN"/>
-                            <constraint firstItem="CKZ-5R-4nA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UeZ-WA-HpF"/>
                             <constraint firstItem="KBK-jf-6on" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XNH-k2-Ihb"/>
-                            <constraint firstItem="X3h-pf-dyr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="13" id="ZoS-7T-vLw"/>
                             <constraint firstItem="dx4-DM-vmD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cUH-Yn-ejV"/>
-                            <constraint firstItem="X3h-pf-dyr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="103" id="eC0-O1-22v"/>
                             <constraint firstItem="dx4-DM-vmD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fkR-ih-1L5"/>
-                            <constraint firstItem="CKZ-5R-4nA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="ldz-zw-hHt"/>
                             <constraint firstAttribute="trailing" secondItem="dx4-DM-vmD" secondAttribute="trailing" id="xcU-n7-i96"/>
                         </constraints>
                     </view>
@@ -189,16 +172,9 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ring.png" translatesAutoresizingMaskIntoConstraints="NO" id="bTS-vN-MPv">
-                                <rect key="frame" x="154" y="517" width="106" height="106"/>
+                                <rect key="frame" x="142" y="509" width="131" height="131"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="248" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-I0-Cld">
-                                <rect key="frame" x="176" y="551" width="63.666666666666664" height="38.666666666666664"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="34"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR TURN : 29 s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="w6E-TD-tNO">
                                 <rect key="frame" x="122" y="696" width="166" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -215,9 +191,16 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ay3-MR-nYr">
-                                <rect key="frame" x="123" y="11" width="168" height="73.666666666666657"/>
+                                <rect key="frame" x="120" y="9" width="174" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4sL-I0-Cld">
+                                <rect key="frame" x="170" y="546" width="75" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BeatlesLightLight" family="Beatles Light" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -237,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCg-Yb-XNU" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752" y="36"/>
+            <point key="canvasLocation" x="750.72463768115949" y="35.869565217391305"/>
         </scene>
         <!--Wrong Controller-->
         <scene sceneID="0sr-aA-V2O">
@@ -255,12 +238,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="BrT-ff-b9w" secondAttribute="height" multiplier="375:86" id="Zl4-bF-Ast"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2P-3l-JfP">
-                                <rect key="frame" x="123" y="13" width="168" height="73.666666666666671"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="U2P-3l-JfP" secondAttribute="height" multiplier="137:60" id="qfP-8z-ILC"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Ups-d9-CqH">
@@ -300,17 +277,18 @@
                                     <constraint firstAttribute="width" secondItem="M6n-NN-TSs" secondAttribute="height" multiplier="195:28" id="gHb-Uf-wFf"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="simone.png" translatesAutoresizingMaskIntoConstraints="NO" id="U2P-3l-JfP">
+                                <rect key="frame" x="119" y="9" width="174" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BrT-ff-b9w" firstAttribute="top" secondItem="Mmw-qq-UMx" secondAttribute="top" id="Lpl-BK-dq4"/>
                             <constraint firstItem="M6n-NN-TSs" firstAttribute="width" secondItem="Mmw-qq-UMx" secondAttribute="width" multiplier="0.9" id="NAZ-zi-Tfl"/>
                             <constraint firstItem="Ups-d9-CqH" firstAttribute="width" secondItem="Mmw-qq-UMx" secondAttribute="width" multiplier="0.7" id="OlC-lB-9qH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="U2P-3l-JfP" secondAttribute="trailing" constant="103" id="PEx-tp-Acc"/>
                             <constraint firstItem="Ups-d9-CqH" firstAttribute="top" secondItem="M6n-NN-TSs" secondAttribute="bottom" constant="8" id="Te3-Gu-kNA"/>
-                            <constraint firstItem="U2P-3l-JfP" firstAttribute="leading" secondItem="Mmw-qq-UMx" secondAttribute="leadingMargin" constant="103" id="WVY-VO-oT8"/>
                             <constraint firstItem="Ups-d9-CqH" firstAttribute="centerY" secondItem="Mmw-qq-UMx" secondAttribute="centerY" id="bGX-gF-zwU"/>
-                            <constraint firstItem="U2P-3l-JfP" firstAttribute="top" secondItem="Mmw-qq-UMx" secondAttribute="topMargin" constant="13" id="gyu-Gv-KWQ"/>
                             <constraint firstAttribute="trailing" secondItem="BrT-ff-b9w" secondAttribute="trailing" id="h3B-Qs-USc"/>
                             <constraint firstItem="BrT-ff-b9w" firstAttribute="leading" secondItem="Mmw-qq-UMx" secondAttribute="leading" id="ocp-Nz-4e5"/>
                             <constraint firstItem="M6n-NN-TSs" firstAttribute="centerX" secondItem="Mmw-qq-UMx" secondAttribute="centerX" id="pqe-3W-Kvp"/>
@@ -339,6 +317,6 @@
         <image name="simone.png" width="512" height="225"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wAa-bf-iVo"/>
+        <segue reference="0BV-uo-vP1"/>
     </inferredMetricsTieBreakers>
 </document>
