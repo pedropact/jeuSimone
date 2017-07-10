@@ -27,6 +27,12 @@ class StartController: UIViewController {
         SingletonShared.sigletonSharedInstance.resetHighscore()
     }
     
+    @IBAction func goToPageWeb(_ sender: UIButton){
+        
+        if let url = NSURL(string: "http://mariogeneau.com") {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
     
 }
 

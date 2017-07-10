@@ -21,11 +21,15 @@ class SimoneBrain {
     var colorToHighlight: UIButton!
     var arrCopyOfRandomColorsToCompare: [UIButton]!
     var scoreKeeperCounter: Int!
+    var timerLabel : UILabel!
+    var aTimer : Timer!
+
     
     //------------------
     
-    init(gameColors: [UIButton]) {
+    init(gameColors: [UIButton], timerLabel: UILabel) {
         self.gameColors = gameColors
+        self.timerLabel = timerLabel
     }
     
     //------------------
@@ -42,12 +46,14 @@ class SimoneBrain {
     
     func startGame() {
         colorIndex = 0
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_ in self.gameColorsToHighlineManager()
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: false){_
+            in self.gameColorsToHighlineManager()
         }
     }
     
     //------------------
     
+
     func gameColorsToHighlineManager() {
         
         if colorIndex < arrRandomColors.count {
@@ -58,10 +64,20 @@ class SimoneBrain {
             colorIndex! += 1
             scoreKeeperCounter = 0
             
-            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.resetAlphaForColors()
+            Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_
+                in self.resetAlphaForColors()
             }
         } else {
             userTurnToPlay = true
+            var sec = 30
+            aTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true){_ in
+                self.timerLabel.text = "YOUR TURN : \(sec) s"
+                if sec == 0 {
+                    self.aTimer.invalidate()
+                    SingletonShared.sigletonSharedInstance.saveScore(String(self.arrRandomColors.count - 1))
+                }
+                sec -= 1
+            }
         }
     }
     
@@ -69,7 +85,8 @@ class SimoneBrain {
     
     func resetAlphaForColors () {
         colorToHighlight.alpha = 1.0
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_ in self.gameColorsToHighlineManager()
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false){_
+            in self.gameColorsToHighlineManager()
         }
     }
 
