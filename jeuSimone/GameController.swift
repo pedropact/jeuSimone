@@ -56,6 +56,11 @@ class GameController: UIViewController {
         if !simoneBrain.userTurnToPlay {
             return
         }
+        simoneBrain.aTimer.invalidate()
+        timerLabel.text = ""
+        if !simoneBrain.userTurnToPlay{
+            return
+        }
         if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
             simoneBrain.arrCopyOfRandomColorsToCompare = simoneBrain.arrRandomColors
         }
