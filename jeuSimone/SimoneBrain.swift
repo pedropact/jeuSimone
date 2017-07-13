@@ -2,16 +2,16 @@
 //  SimoneBrain.swift
 //  jeuSimone
 //
-//  Created by Pedro Teixeira on 03/07/17.
-//  Copyright © 2017 Pedro Teixeira. All rights reserved.
+//  TP 2 - Programmation Orientée Objet
 //
+//  Pedro Paula Alves Carneiro Teixeira
+//
+
 
 import Foundation
 import UIKit
 
 class SimoneBrain {
-    
-    //------------------
     
     var gameColors: [UIButton]!
     var colorIndex: Int!
@@ -23,17 +23,15 @@ class SimoneBrain {
     var scoreKeeperCounter: Int!
     var timerLabel : UILabel!
     var aTimer : Timer!
-
     
-    //------------------
+    //--------------------
     
     init(gameColors: [UIButton], timerLabel: UILabel) {
         self.gameColors = gameColors
         self.timerLabel = timerLabel
     }
     
-    //------------------
-
+    //--------------------
     
     func getRandomNumber(from f: Int, to t: Int) -> Int {
         let from = UInt32(f)
@@ -42,7 +40,7 @@ class SimoneBrain {
         return Int(randomNumber)
     }
     
-    //------------------
+    //--------------------
     
     func startGame() {
         colorIndex = 0
@@ -51,11 +49,9 @@ class SimoneBrain {
         }
     }
     
-    //------------------
+    //--------------------
     
-
     func gameColorsToHighlineManager() {
-        
         if colorIndex < arrRandomColors.count {
             userTurnToPlay = false
             scoreKeeper = ""
@@ -81,7 +77,7 @@ class SimoneBrain {
         }
     }
     
-    //------------------
+    //--------------------
     
     func resetAlphaForColors () {
         colorToHighlight.alpha = 1.0
@@ -89,11 +85,10 @@ class SimoneBrain {
             in self.gameColorsToHighlineManager()
         }
     }
-
-    //------------------
     
-    var scoreKeeper: String? {
-        
+    //--------------------
+    
+    var scoreKeeper: String? {        
         get {
             return scoreTracker
         }
@@ -102,8 +97,8 @@ class SimoneBrain {
         }
     }
     
-    //------------------
-
+    //--------------------
+    
     func verification(_ aButton: UIButton) -> Bool {
         
         if arrCopyOfRandomColorsToCompare[0] == aButton {
@@ -120,19 +115,18 @@ class SimoneBrain {
         }
     }
     
-    //------------------
-
+    //--------------------
+    
     func addRandomColorToArray() {
         let randomIndex = getRandomNumber(from: 0, to: gameColors.count - 1)
         arrRandomColors.append(gameColors[randomIndex])
     }
     
-    //------------------
-
+    //--------------------
+    
     func loadArrayForComparison () {
         arrCopyOfRandomColorsToCompare = arrRandomColors
     }
-    
     
 }
 

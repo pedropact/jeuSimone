@@ -2,9 +2,11 @@
 //  GameController.swift
 //  jeuSimone
 //
-//  Created by Pedro Teixeira on 03/07/17.
-//  Copyright © 2017 Pedro Teixeira. All rights reserved.
+//  TP 2 - Programmation Orientée Objet
 //
+//  Pedro Paula Alves Carneiro Teixeira
+//
+
 
 import UIKit
 
@@ -23,13 +25,13 @@ class GameController: UIViewController {
     var arrOfGameColors: [UIButton]!
     var simoneBrain: SimoneBrain!
     var aTimer: Timer!
-
     @IBOutlet weak var timerLabel: UILabel!
-    //------------------
-    
-    override func viewDidLoad() {
 
+    //--------------------
+
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
         arrOfGameColors = [but1, but2, but3, but4, but5, but6, but7, but8, but9]
         simoneBrain = SimoneBrain(gameColors: arrOfGameColors, timerLabel: self.timerLabel)
         simoneBrain.addRandomColorToArray()
@@ -45,12 +47,13 @@ class GameController: UIViewController {
         }
     }
 
+    //--------------------
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    //------------------
+    //--------------------
     
     @IBAction func buttonManager(_ sender: UIButton) {
         if !simoneBrain.userTurnToPlay {
@@ -58,12 +61,13 @@ class GameController: UIViewController {
         }
         simoneBrain.aTimer.invalidate()
         timerLabel.text = ""
+        
         if !simoneBrain.userTurnToPlay{
             return
         }
         if simoneBrain.arrCopyOfRandomColorsToCompare.count == 0 {
             simoneBrain.arrCopyOfRandomColorsToCompare = simoneBrain.arrRandomColors
-        }
+        }        
         if !simoneBrain.verification(arrOfGameColors[sender.tag]) {
             let theScore = simoneBrain.arrRandomColors.count - 1
             let forWrongDisplay = "SCORE : \(theScore)"
@@ -73,9 +77,9 @@ class GameController: UIViewController {
             
             performSegue(withIdentifier: "wrong", sender: nil)
         }
+        
         simoneBrain.scoreKeeperCounter! += 1
         scoreKeeper.text = "\(simoneBrain.scoreKeeperCounter!)"
-        
     }
 
 }

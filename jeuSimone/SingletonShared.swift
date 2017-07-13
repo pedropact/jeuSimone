@@ -2,29 +2,35 @@
 //  SimoneBrain.swift
 //  jeuSimone
 //
-//  Created by Pedro Teixeira on 03/07/17.
-//  Copyright © 2017 Pedro Teixeira. All rights reserved.
+//  TP 2 - Programmation Orientée Objet
 //
+//  Pedro Paula Alves Carneiro Teixeira
+//
+
 
 import UIKit
 
 class SingletonShared {
-
+    
     var scoreForWrongInterface: String!
     var savedHighscore = UserDefaults.standard
     static let sigletonSharedInstance = SingletonShared()
     
+    //--------------------
     
     init() {
-        //savedHighscore.removeObject(forKey: "score")
         saveDefaultIfNeeded()
     }
+    
+    //--------------------
     
     func saveDefaultIfNeeded() {
         if savedHighscore.object(forKey: "score") == nil {
             savedHighscore.setValue("0", forKey: "score")
         }
     }
+    
+    //--------------------
     
     func saveScore(_ aScore: String) {
         let a = Int(aScore)
@@ -33,15 +39,15 @@ class SingletonShared {
         
         if a! > c! {
             savedHighscore.setValue(aScore, forKey: "score")
-            
         }
     }
+    
+    //--------------------
     
     func resetHighscore() {
         savedHighscore.removeObject(forKey: "score")
         saveDefaultIfNeeded()
     }
-    
     
 }
 
