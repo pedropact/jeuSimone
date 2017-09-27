@@ -1,7 +1,5 @@
 # jeuSimone
 
-C’est un projet de cours et j’en ai fait avec l'aide des videos tutoriels du professeur.
+Application produite avec la supervision de l'enseignant.
 
-Le jeu Simon est un jeu de société électronique de forme circulaire comportant quatre grosses touches de couleurs différentes, rouge, vert, bleu et jaune.
-
-Le but du jeu consiste à reproduire une suite créée aléatoirement par le jeu.
+Le jeu Simon est un jeu de société électronique comportant neuf grosses touches de couleurs bleu et orange. Le but du jeu consiste à reproduire une suite créée aléatoirement par le jeu.
